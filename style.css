@@ -1,0 +1,41 @@
+p {
+    font-size: 16;
+}
+
+.main {
+    background-color: #222222;
+}
+
+.grid-container {
+    padding: 1vw;
+    column-count: 3;
+    background-color: #444444;
+    border-radius: 50px;
+}
+
+.grid-item {
+    background-color: #888888;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1vw;
+
+    height: 30vw;
+}
+
+#formatSelector {
+    padding: 5px;
+}
+
+#button {
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+#drop_zone {
+    background-color: #fa6a6a;
+}
+
+#myFile {
+    font-size: 26;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="main">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1199.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="src/hashes.min.js"></script>
+    <script src="src/cloud.js"></script>
+    <script src="src/index.js"></script>
+
+    <div class="grid-container">
+        <div class="grid-item" id="drop_zone" ondrop="dropHandler(event)">
+            <label>Upload your file:</label>
+            <button id="button" name="submitButton" onclick="onUploadButton()">Choose File</button>
+            <button id="button" name="submitButton" onclick="listS3Objects()">List S3 Objects</button>
+        </div>
+
+        <div class="grid-item" id="middle_zone">
+            <label>Choose a format to convert to:</label>
+            <select id="formatSelector" name="formats">
+                <option value="none">None</option>
+                <option value="excel">Excel</option>
+                <option value="csv">CSV</option>
+            </select>
+        </div>
+
+        <div class="grid-item" id="right_zone">
+            <label>Click to Convert Now:</label>
+            <button id="button" name="submitButton" onclick="onSubmit()">Convert File</button>
+        </div>
+    </div>
+  </body>
+</html>
