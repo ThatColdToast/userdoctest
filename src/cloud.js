@@ -22,8 +22,8 @@ AWS.config.update({
     //     IdentityPoolId: IdentityPoolId,
     // }),
     
-    accessKeyId: "AKIAT2IOJZMVXRGA7FVM",
-    secretAccessKey: "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",
+    accessKeyId: "",
+    secretAccessKey: "",
 });
 
 var s3 = new AWS.S3({
