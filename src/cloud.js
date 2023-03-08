@@ -4,9 +4,9 @@
 // }
 
 // Initialize the Amazon Cognito credentials provider
-var bucketName = "userdoctest";
+var bucketName = "docholder";
 var bucketRegion = "us-east-1";
-var IdentityPoolId = "us-east-1:fa629e4c-3790-4f18-9d43-92f73e8d36d6";
+// var IdentityPoolId = "us-east-1:fa629e4c-3790-4f18-9d43-92f73e8d36d6";
 
 // AWS.config.region = bucketRegion;
 
